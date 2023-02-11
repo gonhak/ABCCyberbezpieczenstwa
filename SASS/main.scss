@@ -36,10 +36,10 @@ body {
   &__Logo {
     display: flex;
     font-size: 2rem;
-    width: 100%; 
+    width: 100%;
     font-weight: bold;
 
-    &--first{
+    &--first {
       font-size: 2.2rem;
     }
 
@@ -148,7 +148,7 @@ body {
     top: 150px;
     right: -100px;
     transform: rotate(5deg);
-    opacity: 0.05 ;
+    opacity: 0.05;
   }
 
   &__content {
@@ -204,12 +204,13 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 235px;
+          width: auto;
           cursor: pointer;
           text-decoration: none;
           padding: 0.5em 1em;
+          margin-top: 2em;
           border: none;
-          border-radius: 15px;
+          border-radius: 10px;
           opacity: 0.75;
           transition: opacity 0.7s;
           font-size: 1.8rem;
@@ -252,7 +253,7 @@ body {
             rgba(255, 131, 72, 1) 100%
           );
 
-          &:first-of-type{
+          &:first-of-type {
             margin-right: 2em;
           }
 
@@ -314,24 +315,26 @@ body {
         &__element {
           font-size: 1.4rem;
 
-          &__link{
+          &__link {
             cursor: pointer;
             text-decoration: none;
             font-size: 1.4rem;
             font-weight: bold;
             color: #458ad1;
             color: linear-gradient(
-             270deg,
-            rgba(69, 138, 209, 1) 0%,
-             rgba(8, 123, 242, 1) 100%
+              270deg,
+              rgba(69, 138, 209, 1) 0%,
+              rgba(8, 123, 242, 1) 100%
             );
 
-            &--first{
+            &--first {
               color: rgb(255, 173, 53);
-              color: linear-gradient(270deg,
-              rgba(255, 173, 53, 1) 0%,
-              rgba(255, 153, 62, 1) 49%,
-              rgba(255, 131, 72, 1) 100%)
+              color: linear-gradient(
+                270deg,
+                rgba(255, 173, 53, 1) 0%,
+                rgba(255, 153, 62, 1) 49%,
+                rgba(255, 131, 72, 1) 100%
+              );
             }
           }
         }
@@ -358,6 +361,198 @@ body {
         rgba(77, 77, 77, 0.25) 87%,
         rgba(77, 77, 77, 0) 100%
       );
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .content_box {
+    &__content {
+      &__page {
+        &__header {
+          font-size: 2.6rem;
+        }
+
+        &__contentArea {
+          font-size: 1.4rem;
+
+          a {
+            font-size: 1.4rem;
+          }
+        }
+        &__buttons {
+          &__button {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      &__info {
+        font-size: 1rem;
+        width: 50%;
+      }
+
+      &__list {
+        &__header {
+          font-size: 1.2rem;
+        }
+
+        &__list {
+          &__element {
+            font-size: 1rem;
+
+            &__link {
+              font-size: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .content_box {
+    &__content {
+      &__page {
+        &__header {
+          font-size: 2.6rem;
+        }
+
+        &__contentArea {
+          font-size: 1.6rem;
+
+          a {
+            font-size: 1.6rem;
+          }
+        }
+        &__buttons {
+          &__button {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      &__info {
+        font-size: 1.2rem;
+        width: 50%;
+      }
+
+      &__list {
+        &__header {
+          font-size: 1.4rem;
+        }
+
+        &__list {
+          &__element {
+            font-size: 1.2rem;
+
+            &__link {
+              font-size: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .content_box {
+    &__content {
+      &__page {
+        &__header {
+          font-size: 2.6rem;
+        }
+
+        &__contentArea {
+          font-size: 1.6rem;
+
+          a {
+            font-size: 1.6rem;
+          }
+        }
+        &__buttons {
+          &__button {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      &__info {
+        font-size: 1.2rem;
+        width: 50%;
+      }
+
+      &__list {
+        &__header {
+          font-size: 1.4rem;
+        }
+
+        &__list {
+          &__element {
+            font-size: 1.2rem;
+
+            &__link {
+              font-size: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+  .content_box {
+    &__content {
+      &__page {
+        &__header {
+          font-size: 3rem;
+        }
+
+        &__contentArea {
+          font-size: 1.8rem;
+
+          a {
+            font-size: 1.8rem;
+          }
+        }
+        &__buttons {
+          &__button {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      &__info {
+        font-size: 1.6rem;
+        width: 45%;
+      }
+
+      &__list {
+        &__header {
+          font-size: 1.8rem;
+        }
+
+        &__list {
+          &__element {
+            font-size: 1.6rem;
+
+            &__link {
+              font-size: inherit;
+            }
+          }
+        }
+      }
     }
   }
 }
